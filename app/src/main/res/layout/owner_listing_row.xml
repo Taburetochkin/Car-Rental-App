@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp">
+    <ImageView
+        android:id="@+id/car_image_imageView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_md"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Car Image"
+        android:clipToOutline="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:layout_marginVertical="4dp">
+        <TextView
+            android:id="@+id/car_main_info_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Brand Model, Color"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_price_per_day_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="$price/day"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/car_license_plate_textView"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Plate"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="18sp" />
+
+</LinearLayout>

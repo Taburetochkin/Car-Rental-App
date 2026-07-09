@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp">
+    <ImageView
+        android:id="@+id/car_image_imageView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_md"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Car Image"
+        android:clipToOutline="true"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="25dp">
+        <TextView
+            android:id="@+id/car_main_info_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Brand Model, Color"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_price_per_day_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="$price/day"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/car_location_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="License Plate: "
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_license_plate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Plate"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/car_renter_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Renter: "
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_renter_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Renter"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Confirmation Code: "
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_confirmation_code_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Code"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Dates: "
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/car_booking_dates_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Dates"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_booking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Cancel Booking"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="25dp"/>
+
+</LinearLayout>

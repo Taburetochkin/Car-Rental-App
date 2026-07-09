@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchCarsActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Cars To Rent"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/manage_bookings_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/outline_edit_28" />
+
+            <ImageButton
+                android:id="@+id/logout_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/outline_door_open_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="16dp">
+        <EditText
+            android:id="@+id/search_cars_by_city_editText"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:fontFamily="@font/montserrat"
+            android:textFontWeight="400"
+            android:inputType="text"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+</LinearLayout>

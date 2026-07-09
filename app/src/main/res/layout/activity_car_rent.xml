@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarRentActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/car_license_plate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="WWWWWW"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/search_cars_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_map_search_28"
+                android:padding="6dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rounded_full" />
+
+            <ImageButton
+                android:id="@+id/manage_bookings_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_edit_28"
+                android:padding="6dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rounded_full" />
+
+            <ImageButton
+                android:id="@+id/logout_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/outline_door_open_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/car_image_imageView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_md"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="Car Image"
+        android:clipToOutline="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        android:layout_marginVertical="16dp">
+        <TextView
+            android:id="@+id/car_main_info_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Brand Model, Color"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Owner: "
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/car_owner_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Owner"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Price: "
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/car_price_per_day_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="$price/day"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/start_date_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat"
+            android:hint="Start Date (dd-mm-yyyy)"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/end_date_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:hint="End Date (dd-mm-yyyy)"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textFontWeight="600"
+            android:textColor="@color/white"
+            android:text="Book Now"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

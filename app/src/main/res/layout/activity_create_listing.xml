@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateListingActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Create Listing"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/owner_cars_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_list_alt_28"
+                android:padding="6dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rounded_full" />
+
+            <ImageButton
+                android:id="@+id/manage_bookings_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/outline_edit_28" />
+
+            <ImageButton
+                android:id="@+id/logout_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/outline_door_open_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/car_brand_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/car_model_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="8dp"/>
+
+    <EditText
+        android:id="@+id/car_color_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Color"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/car_license_plate_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="License Plate"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="8dp"/>
+
+    <EditText
+        android:id="@+id/car_price_per_day_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price Per Day"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/car_city_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="8dp"/>
+
+    <EditText
+        android:id="@+id/car_address_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/car_photo_url_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Photo URL"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Create"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerCarsActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Owner's Cars"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/create_listing_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_add_28"
+                android:padding="6dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/rounded_full" />
+
+            <ImageButton
+                android:id="@+id/manage_bookings_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginHorizontal="3dp"
+                android:src="@drawable/outline_edit_28" />
+
+            <ImageButton
+                android:id="@+id/logout_imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_full"
+                android:padding="6dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/outline_door_open_28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/owner_cars_message_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No cars to show."
+        android:fontFamily="@font/montserrat_thin"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/owner_cars_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>
